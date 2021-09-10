@@ -14,8 +14,10 @@ Scientific Computing with Python Projects - my solutions
 
    > Write a function named "add_time" that can add a duration to a start time and return the result.
 
-2. [budget-app](03-budget-app/budget.py)
+3. [budget-app](03-budget-app/budget.py)
 
    > Create a "Category" class that can be used to create different budget categories.
 
-   
+4. [polygon-area-calculator](04-polygon-area-calculator/shape_calculator.py)
+   > In this project you will use object oriented programming to create a Rectangle class and a Square class. The
+   > Square class should be a subclass of Rectangle and inherit methods and attributes.
