@@ -1,6 +1,6 @@
 # freecodecamp-scientific-computing-with-python
 
-Scientific Computing with Python Projects - my solutions
+Scientific Computing with Python- my solutions to all the projects
 
 # projects
 
@@ -19,5 +19,10 @@ Scientific Computing with Python Projects - my solutions
    > Create a "Category" class that can be used to create different budget categories.
 
 4. [polygon-area-calculator](04-polygon-area-calculator/shape_calculator.py)
+   
    > In this project you will use object oriented programming to create a Rectangle class and a Square class. The
    > Square class should be a subclass of Rectangle and inherit methods and attributes.
+
+5. [probability-calculator](05-probability-calculator/prob_calculator.py)
+
+   > Write a program to determine the approximate probability of drawing certain balls randomly from a hat.
