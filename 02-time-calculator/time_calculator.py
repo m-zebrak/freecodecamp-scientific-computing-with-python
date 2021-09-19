@@ -1,4 +1,4 @@
-def add_time(start, duration, day=None):
+def add_time(start: str, duration: str, day: str = None) -> str:
     days = ('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday')
     start_lst = list(map(int, start[:-3].split(':')))
     duration_lst = list(map(int, duration.split(':')))

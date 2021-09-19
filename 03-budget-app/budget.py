@@ -9,7 +9,7 @@ class Category:
         output += [f'Total: {self.get_balance():.2f}']
         return '\n'.join(output)
 
-    def deposit(self, amount: float, description: str = '') -> None:
+    def deposit(self, amount: float, description: str = ''):
         self.ledger.append({'amount': amount, 'description': description})
 
     def withdraw(self, amount: float, description: str = '') -> bool:
@@ -24,7 +24,7 @@ class Category:
     def get_balance(self) -> float:
         return sum([line.get('amount') for line in self.ledger])
 
-    def transfer(self, amount: float, recipient) -> bool:
+    def transfer(self, amount: float, recipient: 'Category') -> bool:
         if not self.check_funds(amount):
             return False
         self.withdraw(amount, f'Transfer to {recipient.category}')
@@ -32,7 +32,7 @@ class Category:
         return True
 
 
-def create_spend_chart(categories):
+def create_spend_chart(categories: list[Category]) -> str:
     output = ['Percentage spent by category\n']
     withdrawals = [sum([line.get('amount') for line in cat.ledger if line.get('amount') < 0]) for cat in categories]
     percent_withdrawals = [round(w / sum(withdrawals) * 100) for w in withdrawals]
